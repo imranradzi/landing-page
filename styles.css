@@ -5,13 +5,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    min-height: 100vh;
+    min-height: 200vh;
     margin: 0;
 }
 
 .section {
      flex: 1 1 auto;
-     padding: 10px 300px;
+     padding: 10px 200px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -32,7 +32,6 @@ a {
 
 .section.top-one {
     flex: 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -103,13 +102,27 @@ div.quotes {
     flex-wrap: wrap;
     padding: 20px 330px;
     font-size: 24px;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quotes .quote {
     font-style: italic;
-    color: #1F2937
+}
+
+.quotes .quoted {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .images-and-text {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 36px;
     padding: 10px 150px;
 }
@@ -121,6 +134,8 @@ div.quotes {
 .info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
 }
 
